@@ -7,12 +7,12 @@ export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className=" bg-black text-white">
       <header className="border-b border-white/10 bg-black/50 backdrop-blur-md z-50">
         <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
           <a href="/" className="flex items-center space-x-2 mt-2">
             <div className="h-40 w-32 overflow-hidden">
-              <video className="h-full w-full object-cover" muted autoPlay loop playsInline>
+              <video className="h-full w-full object-cover" muted autoPlay playsInline>
                 <source src={Logo} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
