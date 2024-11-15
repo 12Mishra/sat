@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from 'lucide-react';
 import Logo from "../assets/Logo.mp4";
+import {Link} from 'react-router-dom'
 
 export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,10 +44,10 @@ export default function LandingPage() {
 
           <div className="hidden md:flex items-center space-x-4">
             <button className="text-sm px-4 py-2 rounded hover:bg-white/10 transition-colors">
-              Log in
+              <Link to='/login'>Log in</Link>
             </button>
             <button className="text-sm px-4 py-2 rounded bg-white text-black hover:bg-gray-200 transition-colors">
-              Sign up
+            <Link to='/register'>Register</Link>
             </button>
           </div>
 

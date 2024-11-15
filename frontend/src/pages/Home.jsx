@@ -4,7 +4,6 @@ import Herosection from '../components/Herosection'
 const Home = () => {
   return (
     <div>
-      <Navbar/>
       <Herosection/>
     </div>
   )
